@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.erkaneroglu.balloonpop.Easy">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/surelogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        app:srcCompat="@drawable/skorlogusu"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginTop="10dp"
+        android:text="60"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginRight="29dp" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginLeft="31dp" />
+
+    <GridLayout
+        android:layout_width="370dp"
+        android:layout_height="500dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="78dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.533">
+
+        <ImageView
+            android:id="@+id/balon1"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon2"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon3"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon4"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="0"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon5"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="0"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon6"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon7"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon8"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon9"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="1"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon10"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="1"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon11"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:onClick="skorArtir"
+            android:src="@drawable/kmavibalon" />
+
+        <ImageView
+            android:id="@+id/balon12"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon13"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon14"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="2"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon15"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="2"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon16"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon17"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon18"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:onClick="skorArtir"
+            android:src="@drawable/kmavibalon" />
+
+        <ImageView
+            android:id="@+id/balon19"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="3"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon20"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="3"
+            android:onClick="skorArtir"
+            android:src="@drawable/kmavibalon" />
+
+        <ImageView
+            android:id="@+id/balon21"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon22"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="4"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon23"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon24"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="4"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon25"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="4"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon26"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon27"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon28"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="5"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon29"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="5"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon30"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="5"
+            android:onClick="skorArtir"
+            android:src="@drawable/kmavibalon" />
+
+        <ImageView
+            android:id="@+id/balon31"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="0"
+            android:layout_row="6"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon32"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="1"
+            android:layout_row="6"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+        <ImageView
+            android:id="@+id/balon33"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="2"
+            android:layout_row="6"
+            android:onClick="skorArtir"
+            android:src="@drawable/mavibalon" />
+
+        <ImageView
+            android:id="@+id/balon34"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="3"
+            android:layout_row="6"
+            android:onClick="skorArtir"
+            android:src="@drawable/kirmizibalon" />
+
+        <ImageView
+            android:id="@+id/balon35"
+            android:layout_width="74dp"
+            android:layout_height="65dp"
+            android:layout_column="4"
+            android:layout_row="6"
+            android:onClick="skorArtir"
+            android:src="@drawable/turucubalon" />
+
+    </GridLayout>
+    <ImageView
+        android:id="@+id/scorePanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/tekrar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/scorepanel"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/tekrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paylas"
+        app:srcCompat="@drawable/tekrar"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/paylas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonSkor"
+        app:srcCompat="@drawable/paylas"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/sonSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+</android.support.constraint.ConstraintLayout>
