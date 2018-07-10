@@ -1,2 +1,2 @@
 # balonpatlat
-Android Balon Patlatma Oyunu
+Android Balloon Pop Game
